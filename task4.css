@@ -1,0 +1,37 @@
+html
+{
+  color:white;
+  background-image:url("https://github.com/zhongshanxian/Baidu-IFE-2017/blob/master/docs/assets/img/quer.jpg?raw=true");
+}
+footer
+{
+  text-align:right;
+  font-size:12px;
+  color:white;
+}
+div
+{
+	/*利用渐变设置圆弧切角*/
+  background:
+  radial-gradient(circle at top left,
+  rgba(200,200,200,0.5) 50px, rgba(200,200,200,0.1) 0) top left,
+  radial-gradient(circle at bottom right,
+  rgba(200,200,200,0.5) 50px, rgba(200,200,200,0.1) 0) bottom right;
+  /*将div分为上下两个板块*/
+  background-color:rgba(70,50,50,0.7);
+  padding:40px;
+  text-indent:2em;
+  position:absolute;
+  top:50%;/*上偏移50%*/
+  left:50%;/*下偏移50%*/
+  transform: translate(-50%, -50%);/*2D转换，向左向上移动div的50%距离*/
+}
+/*设置小屏显示*/
+@media only screen and (max-width:884px)
+{
+  body
+  {
+    overflow-x:scroll;
+    width:884px;
+  }
+}
